@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <title>Daftar</title>
-        <?php include 'layout/head.php' ?>
+        <?php include '../layout/head.php' ?>
     </head>
 
     <body>
         
-    <?php include 'layout/navbar.php' ?>
+    <?php include '../layout/navbar.php' ?>
 
         <img src="image/fantasticFourIl.png" alt="" class="ilus">
         <div class="container">

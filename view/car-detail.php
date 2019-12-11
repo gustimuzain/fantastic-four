@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <title></title>
-        <?php include 'layout/head.php' ?>
+        <?php include '../layout/head.php' ?>
     </head>
 
     <body>
 
-        <?php include 'layout/navbar.php' ?>
+        <?php include '../layout/navbar.php' ?>
 
         <div class="container">
             <div class="row">
@@ -78,6 +78,6 @@
                 </div>
             </div>
         </div>
-        <?php include 'layout/footer.php' ?>
+        <?php include '../layout/footer.php' ?>
     </body>
 </html>
