@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dasboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+        <style media="screen">
+            #wrapper {
+                padding-left: 0;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+            #sidebar-wrapper {
+                z-index: 1000;
+                position: fixed;
+                left: 250px;
+                width: 0;
+                height: 100%;
+                margin-left: -250px;
+                overflow-y: auto;
+                background: #000;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+            #page-content-wrapper {
+                width: 100%;
+                position: absolute;
+                padding: 15px;
+            }
+
+            #wrapper.toggled #page-content-wrapper {
+                position: absolute;
+                margin-right: -250px;
+            }
+            .sidebar-nav {
+                position: absolute;
+                top: 0;
+                width: 250px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .sidebar-nav li {
+                text-indent: 20px;
+                line-height: 40px;
+            }
+
+            .sidebar-nav li a {
+                display: block;
+                text-decoration: none;
+                color: #999999;
+            }
+
+            .sidebar-nav li a:hover {
+                text-decoration: none;
+                color: #fff;
+                background: rgba(206, 15, 15, 0.2);
+            }
+
+            .sidebar-nav li a:active,
+            .sidebar-nav li a:focus {
+                text-decoration: none;
+            }
+
+            .sidebar-nav > .sidebar-brand {
+                height: 65px;
+                font-size: 18px;
+                line-height: 60px;
+            }
+
+            .sidebar-nav > .sidebar-brand a {
+                color: #999999;
+            }
+
+            .sidebar-nav > .sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
+
+            @media(min-width:768px) {
+                #wrapper {
+                    padding-left: 250px;
+                }
+
+                #wrapper.toggled {
+                    padding-left: 0;
+                }
+
+                #sidebar-wrapper {
+                    width: 250px;
+                }
+
+                #wrapper.toggled #sidebar-wrapper {
+                    width: 0;
+                }
+
+                #page-content-wrapper {
+                    padding: 20px;
+                    position: relative;
+                }
+
+                #wrapper.toggled #page-content-wrapper {
+                    position: relative;
+                    margin-right: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Fantastic Four
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Konten</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
