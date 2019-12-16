@@ -11,7 +11,7 @@
                     <a class="nav-link" href="">SYARAT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="view/contact.php">KONTAK</a>
+                    <a class="nav-link" href="contact.php">KONTAK</a>
                 </li>
             </ul>
             <div class="navbar-nav ml-auto">

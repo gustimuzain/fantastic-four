@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Fantastic Four</title>
-        <?php include 'layout/head.php' ?>
+        <?php include '../layout/head.php' ?>
     </head>
     <body>
     
-        <?php include 'layout/navbar.php' ?>
+        <?php include '../layout/navbar.php' ?>
              
         <div class="card ">
             <div class="promo">
@@ -61,7 +60,7 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="card shadow p-3 mb-5" id="cardmobil">
 						<div class="productinfo text-center">
-							<img src="image/mobil/brio.jpg" alt="" />
+							<img src="../image/mobil/brio.jpg" alt="" />
 							<div class="">
                                 <h5 class="">Honda Brio</h5>
                                 <div class="d-flex justify-content-center">
@@ -79,10 +78,10 @@
             </div>
         </div>
 
-        <?php include 'layout/footer.php' ?>
+        <?php include '../layout/footer.php' ?>
 
     </body>
     
-    <?php include 'layout/script.php' ?>
+    <?php include '../layout/script.php' ?>
 
 </html>
