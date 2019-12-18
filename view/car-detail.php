@@ -15,7 +15,7 @@
                     <div class="card rounded cardshad cardrespo">
                         <div>
                             <div class="productdetail">
-                                <img src="inter//Mobil/brio.jpg" alt="">
+                                <img src="../image//Mobil/brio.jpg" alt="">
                             </div>
                             <div class="d-flex flex-column align-items-center">
                                 <div class="">
@@ -52,24 +52,28 @@
                                     <p>Info Mobil</p>
                                     <ul>
                                         <li>Tahun 2018</li>
-                                        <li>hhj</li>
-                                        <li>jgfg</li>
+                                        <li>Bagasi</li>
+                                        <li>Manual</li>
                                     </ul>
                                 </div>
                                 <div>
                                     <p>Info Rental</p>
                                     <ul>
-                                        <li>Tahun 2018</li>
-                                        <li>hhj</li>
-                                        <li>jgfg</li>
+                                        <li>Kembalikan bensin seperti semula waktu meminjam</li>
+                                        <li>Penggunaan hingga 24 jam/hari</li>
+                                        <li>Jika pemakaian melebihi dari jam pengembalian, pelanggan dikenakan biaya tambahan
+                                            sebesar 10% per jam dari harga sewa
+                                        </li>
                                     </ul>
                                 </div>
                                 <div>
                                     <p>Syarat Peminjaman</p>
                                     <ul>
-                                        <li>Tahun 2018</li>
-                                        <li>hhj</li>
-                                        <li>jgfg</li>
+                                        <li>SIM C Asli</li>
+                                        <li>KK Asli (KTM jika luar DIY)</li>
+                                        <li>KTP Asli</li>
+                                        <li>Motor</li>
+                                        <li>STNK Motor</li>
                                     </ul>
                                 </div>
                             </div>
@@ -78,6 +82,8 @@
                 </div>
             </div>
         </div>
-        <?php include '../layout/footer.php' ?>
+        <div style="margin-top: 9rem">
+            <?php include '../layout/footer.php' ?>
+        </div>
     </body>
 </html>
