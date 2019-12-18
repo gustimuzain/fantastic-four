@@ -46,6 +46,11 @@
     .ilus{
         display: none;
     }
+    .not-found{
+        width: 100px; 
+        height: 200px; 
+        object-fit: contain
+    }
     
 }
 @media (max-width: 767px){
@@ -89,5 +94,10 @@
     .btn-primary{
         border-radius:23px;
         padding: 6px 29px 6px 29px;
+    }
+    .not-found{
+        width: 100px; 
+        height: 100px; 
+        /* object-fit: contain */
     }
 }

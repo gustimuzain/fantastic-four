@@ -130,3 +130,8 @@ svg{
     height: 650px;
     margin-left: 50px;
 }
+.not-found{
+    width: 100px; 
+    height: 100px; 
+    /* object-fit: contain */
+}

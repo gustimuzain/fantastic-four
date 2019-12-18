@@ -15,7 +15,7 @@
                     <div class="card rounded cardshad cardrespo">
                         <div>
                             <div class="productdetail">
-                                <img src="../image//Mobil/brio.jpg" alt="">
+                                <img src="../image/mobil/brio.jpg" alt="">
                             </div>
                             <div class="d-flex flex-column align-items-center">
                                 <div class="">
