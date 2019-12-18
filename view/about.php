@@ -42,10 +42,8 @@
             </div>
         </div>
 
-        <?php include '../layout/footer.php' ?>
-
+        <div style="margin-top: 11rem;">
+            <?php include '../layout/footer.php' ?>
+        </div>
     </body>
-    
-    <?php include '../layout/script.php' ?>
-
 </html>
