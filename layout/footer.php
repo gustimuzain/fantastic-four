@@ -1,7 +1,7 @@
     <div class="footer">
         <div class="contain">
             <div class="col">
-                <h1>Tentang</h1>
+                <a href="../view/about.php"><h1>Tentang</h1></a>
                 <h1>Pusat Bantuan</h1>
                 <h1>Kebijakan</h1>
             </div>
