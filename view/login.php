@@ -9,7 +9,7 @@
         
         <?php include '../layout/navbar.php' ?>
 
-        <img src="image/fantasticFourIl.png" alt="" class="ilus">
+        <img src="../image/status/undraw_city_driver_jh2h.png" alt="" class="ilus">
         <div class="container">
             <div class="row card shadow p-3 mb-5 register">
                 <div class="">

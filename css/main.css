@@ -24,7 +24,7 @@
     width: 100%;
     position: relative;
     height: auto;
-    background-color: rgba(34, 83, 245, 0.877);
+    background-color: #2253F5;
 }
 .footer .col {
     width: 190px;
@@ -126,9 +126,10 @@ svg{
 }
 .ilus{
     position: fixed;
-    width: 760px;
-    height: 650px;
+    width: 600px;
+    height: 600px;
     margin-left: 50px;
+    object-fit: contain;
 }
 .not-found{
     width: 100px; 
