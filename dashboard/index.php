@@ -8,12 +8,11 @@
         echo "<meta http-equiv='refresh' content='2; url=login.php'>";
     }else{
         define('INDEX', true);
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Dasboard</title>
+        <title>Dashboard</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -27,6 +26,11 @@
     </head>
 
     <body>
+        <!-- <header>
+            <div class="navbar">
+                DASHBOARD
+            </div>
+        </header> -->
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
@@ -35,11 +39,28 @@
                             Fantastic Four
                         </a>
                     </li>
-                    <li>
-                        <a href="#">Dashboard</a>
+                    <li class="">
+                        <div class="container">
+                            <div class="row">
+                                <img src="../image/avatar/micu.png" alt="" class="profile">
+                                <p class="name">Hardcuan</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">Logout</a>
+                        <a href="?hal=dashboard">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="?hal=chart">Chart</a>
+                    </li>
+                    <li>
+                        <a href="?hal=mobil">Mobil</a>
+                    </li>
+                    <li>
+                        <a href="?hal=kategori-mobil">Kategori Mobil</a>
+                    </li>
+                    <li>
+                        <a href="logout.php">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -56,3 +77,6 @@
         </div>
     </body>
 </html>
+<?php
+    }
+?>

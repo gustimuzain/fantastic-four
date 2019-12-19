@@ -1,5 +1,5 @@
 <?php
-    if(!define('INDEX')) die("");
+    if(!defined('INDEX')) die("");
 
     $halaman = array("dashboard", "mobil", "mobil_tambah",
     "mobil_edit", "mobil_update", "mobil_hapus");
