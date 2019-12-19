@@ -5,6 +5,14 @@
     margin-left: 100px;
     margin-right: 6px;
 }
+.nav-link::after{
+    transition: width .3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2253F5;
+}
 .productinfo p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
