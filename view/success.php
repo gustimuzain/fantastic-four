@@ -15,7 +15,7 @@
             
             <div class="d-flex justify-content-center">
                 <div>
-                    <img src="../image/status/undraw_pay_online_b1hk.svg" alt="" style="widht: 400px; height: 360px; object-fit: contain">
+                    <img class="payment-success" src="../image/status/undraw_mobile_pay_9abj.png" alt="" style="widht: 400px; height: 360px; object-fit: contain">
                 </div>
             </div>
         </div>
