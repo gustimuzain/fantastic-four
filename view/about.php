@@ -19,21 +19,21 @@
 
             <div class="row d-flex justify-content-center">
                 <div class="card" style="width: 10rem; margin: 20px;">
-                    <img class="card-img-top" src="../image/avatar/micu.png"> <a href="http://www.freepik.com"></a>
+                    <img class="card-img-top" src="../image/status/undraw_profile_pic_ic5t.png"> <a href="http://www.freepik.com"></a>
                     <div class="card-body align-self-center">
                         <h5 class="card-title">Hardcuan Sitompul</h5>
                         <p class="card-text text-muted">17.11.1599</p>
                     </div>
                 </div>
                 <div class="card" style="width: 10rem; margin: 20px;">
-                    <img class="card-img-top" src="../image/avatar/ferdi.png"> <a href="http://www.freepik.com"></a>
+                    <img class="card-img-top" src="../image/status/undraw_profile_pic_ic5t.png"> <a href="http://www.freepik.com"></a>
                     <div class="card-body align-self-center">
                         <h5 class="card-title">Ferdiansyah Putra</h5>
                         <p class="card-text text-muted">17.11.1599</p>
                     </div>
                 </div>
                 <div class="card" style="width: 10rem; margin: 20px;">
-                    <img class="card-img-top" src="../image/avatar/gusti.png"> <a href="http://www.freepik.com"></a>
+                    <img class="card-img-top" src="../image/status/undraw_profile_pic_ic5t.png"> <a href="http://www.freepik.com"></a>
                     <div class="card-body align-self-center">
                         <h5 class="card-title">Gusti Muzain</h5>
                         <p class="card-text text-muted">17.11.1599</p>
