@@ -1,10 +1,11 @@
-<?php 
+<?php
     session_start();
     ob_start();
-
+    
     include "../config.php";
+
     if(empty($_SESSION['username']) or empty($_SESSION['password'])){
-        echo "<p>anda belum login</p>";
+        echo "<p align='center'> Anda harus login terlebih dahulu!</p>";
         echo "<meta http-equiv='refresh' content='2; url=login.php'>";
     }else{
         define('INDEX', true);
@@ -57,7 +58,7 @@
                         <a href="?hal=mobil">Mobil</a>
                     </li>
                     <li>
-                        <a href="?hal=kategori-mobil">Kategori Mobil</a>
+                        <a href="?hal=kategori">Kategori Mobil</a>
                     </li>
                     <li>
                         <a href="logout.php">Logout</a>

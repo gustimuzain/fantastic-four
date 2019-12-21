@@ -1,8 +1,10 @@
 <?php
     if(!defined('INDEX')) die("");
 
-    $halaman = array("dashboard", "mobil", "mobil_tambah",
-    "mobil_edit", "mobil_update", "mobil_hapus");
+    $halaman = array("dashboard", "mobil", "mobilTambah",
+    "mobilInsert", "mobilUpdate", "mobilHapus", "kategori",
+    "kategoriTambah", "kategoriInsert", "kategoriedit", "kategoriUpdate",
+    "kategoriHapus");
 
     if(isset($_GET['hal'])) $hal = $_GET['hal'];
     else $hal = "dashboard";
