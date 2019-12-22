@@ -28,6 +28,7 @@
 
          move_uploaded_file($lokasi, "image/".$foto);
          $query = mysqli_query($con, "UPDATE mobil SET
+            foto = '$foto',
             nama = '$_POST[nama]',
             harga = '$_POST[harga]',
             tahun = '$_POST[tahun]',

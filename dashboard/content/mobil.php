@@ -33,7 +33,7 @@
          <td><?= $data['plat'] ?></td>
          <td><?= $data['tipe'] ?></td>
          <td>
-            <a class="btn btn-primary" href="?hal=mobilEdit&id=<?= $data['mobil_id'] ?>"> Edit </a>
+            <a class="btn btn-success" href="?hal=mobilEdit&id=<?= $data['mobil_id'] ?>"> Edit </a>
             <a class="btn btn-danger" href="?hal=mobilHapus&id=<?= $data['mobil_id'] ?>&foto=<?= $data['foto'] ?>"> Hapus </a>
          </td>
      </tr>

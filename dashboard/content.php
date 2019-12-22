@@ -2,8 +2,8 @@
     if(!defined('INDEX')) die("");
 
     $halaman = array("dashboard", "mobil", "mobilTambah",
-    "mobilInsert", "mobilUpdate", "mobilHapus", "kategori",
-    "kategoriTambah", "kategoriInsert", "kategoriedit", "kategoriUpdate",
+    "mobilInsert", "mobilEdit","mobilUpdate", "mobilHapus", "kategori",
+    "kategoriTambah", "kategoriInsert", "kategoriEdit", "kategoriUpdate",
     "kategoriHapus");
 
     if(isset($_GET['hal'])) $hal = $_GET['hal'];

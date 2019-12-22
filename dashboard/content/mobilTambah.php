@@ -7,7 +7,7 @@
    <div class="ml-3">
         <div class="form-group">
             <label for="foto">Gambar</label>   
-            <div class="input"><input type="file" id="gambar" name="gambar"></div>
+            <div class="input"><input type="file" id="foto" name="foto"></div>
         </div>
 
         <div class="form-group">

@@ -27,7 +27,7 @@
          <td><?= $data['jumlah'] ?></td>
          <td><?= $data['bagasi'] ?></td>
          <td>
-            <a class="btn btn-primary" href="?hal=kategoriEdit&id=<?= $data['kategori_id'] ?>"> Edit </a>
+            <a class="btn btn-success" href="?hal=kategoriEdit&id=<?= $data['kategori_id'] ?>"> Edit </a>
             <a class="btn btn-danger" href="?hal=kategoriHapus&id=<?= $data['kategori_id'] ?>"> Hapus </a>
          </td>
      </tr>
