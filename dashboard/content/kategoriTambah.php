@@ -7,22 +7,22 @@
    
    <div class="form-group">
       <label for="nama">Tipe</label>   
-      <div class="input"><input type="text" id="tipe" name="tipe"></div> 
+      <input class="form-control" type="text" id="tipe" name="tipe">
    </div>
 
    <div class="form-group">
       <label for="nama">Jumlah</label>   
-      <div class="input"><input type="number" id="jumlah" name="jumlah"></div> 
+      <input class="form-control" type="number" id="jumlah" name="jumlah">
    </div>
 
    <div class="form-group">
       <label for="nama">Bagasi</label>   
-      <div class="input"><input type="number" id="bagasi" name="bagasi"></div> 
+      <input class="form-control" type="number" id="bagasi" name="bagasi">
    </div>
 
    <div class="form-group">
       <input type="submit" value="Simpan" class="btn btn-primary">
-      <input type="reset" value="Batal" class="tombol reset">
+      <input type="reset" value="Batal" class="btn btn-outline-primary m-3">
    </div>
    
 </form>

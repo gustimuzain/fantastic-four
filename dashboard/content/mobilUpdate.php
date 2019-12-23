@@ -13,6 +13,7 @@
             harga = '$_POST[harga]',
             tahun = '$_POST[tahun]',
             plat = '$_POST[plat]',
+            transmisi = '$_POST[transmisi]',
             kategori_id = '$_POST[kategori]'
       WHERE mobil_id='$_POST[id]'");
    }else{
@@ -33,6 +34,7 @@
             harga = '$_POST[harga]',
             tahun = '$_POST[tahun]',
             plat = '$_POST[plat]',
+            transmisi = '$_POST[transmisi]',
             kategori_id = '$_POST[kategori]'
          WHERE mobil_id='$_POST[id]'");
       }

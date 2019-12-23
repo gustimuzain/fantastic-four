@@ -2,8 +2,8 @@
    if(!defined('INDEX')) die("");
 ?>
 
-<h2 class="">Data Jabatan</h2>
-<a class="btn btn-primary" href="?hal=kategoriTambah">Tambah</a>
+<h2 class="">Data Kategori</h2>
+<a class="btn btn-primary mb-3 mt-3" href="?hal=kategoriTambah">Tambah</a>
 
 <table class="table">
    <thead>

@@ -60,9 +60,15 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="card shadow p-3 mb-5" id="cardmobil">
 						<div class="productinfo text-center">
-							<img src="../image/mobil/brio.jpg" alt="" />
+                        <?php
+                            $query = mysqli_query($con, "SELECT * FROM mobil LEFT JOIN kategori_mobil ON mobil.kategori_id=kategori_mobil.kategori_id ORDER BY mobil.kategori_id DESC");
+                            $no = 0;
+                            while($data = mysqli_fetch_array($query)){
+                                $no++;
+                        ?>
+							<img src="image/<?= $data['foto'] ?>" alt="" />
 							<div class="">
-                                <h5 class="">Honda Brio</h5>
+                                <h5 class=""><?= $data['nama'] ?></h5>
                                 <div class="d-flex justify-content-center">
                                     <span class="badge badge-pill badge-secondary align-self-center">Manual</span>
                                     <div class="ml-2">
@@ -72,6 +78,9 @@
                             </div>
 							<a href="#" class="btn btn-primary mt-4">Pilih</a>
 						</div>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
                 

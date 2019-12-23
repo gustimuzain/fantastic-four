@@ -13,43 +13,40 @@
          
          <div class="form-group">
             <label for="foto">Foto</label>   
-            <div class="input">
                <input type="file" id="foto" name="foto">
                <img src="image/<?= $data['foto'] ?>" width="150">
-            </div>
          </div>
 
          <div class="form-group">
             <label for="nama">Nama</label>   
-            <div class="input">
-               <input class="form-control" type="text" id="nama" name="nama" value="<?= $data['nama'] ?>">
-            </div> 
+               <input class="form-control" type="text" id="nama" name="nama" value="<?= $data['nama'] ?>"> 
          </div>
 
          <div class="form-group">
             <label for="nama">Harga</label>   
-            <div class="input">
                <input class="form-control" type="text" id="harga" name="harga" value="<?= $data['harga'] ?>">
-            </div> 
          </div>
 
          <div class="form-group">
             <label for="nama">Tahun</label>   
-            <div class="input">
                <input class="form-control" type="text" id="tahun" name="tahun" value="<?= $data['tahun'] ?>">
-            </div> 
          </div>
 
          <div class="form-group">
             <label for="tanggal">Plat</label>   
-            <div class="input">
                <input class="form-control" type="text" id="plat" name="plat" value="<?= $data['plat'] ?>">
-            </div>
+         </div>
+
+         <div class="form-group">
+            <label for="tanggal">Transmisi</label>   
+            <select class="form-control" id="transmisi" name="transmisi" value="<?= $data['transmisi'] ?>">
+               <option>Manual</option>
+               <option>Matic</option>
+            </select>
          </div>
 
          <div class="form-group">
             <label for="kategori">Kategori</label> 
-            <div class="input">
             <select class="form-control" id="kategori" name="kategori">
                <option value=""> -Pilih Kategori-</option>
                <?php
@@ -61,7 +58,6 @@
                   }
                ?>
             </select>
-            </div>
          </div>
 
          <div class="form-group">

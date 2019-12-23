@@ -5,29 +5,23 @@
    $data = mysqli_fetch_array($query);
 ?>
 
-<h2 class="judul">Edit Kategori</h2>
+<h2 class="">Edit Kategori</h2>
 <form method="post" action="?hal=kategoriUpdate">
    <input type="hidden" name="id" value="<?= $data['kategori_id'] ?>">
 
    <div class="form-group">
       <label for="nama">Tipe</label>   
-      <div class="input">
-         <input type="text" id="tipe" name="tipe" value="<?= $data['tipe'] ?>">
-      </div> 
+         <input class="form-control" type="text" id="tipe" name="tipe" value="<?= $data['tipe'] ?>">
    </div>
 
    <div class="form-group">
       <label for="nama">Jumlah</label>   
-      <div class="input">
-         <input type="text" id="jumlah" name="jumlah" value="<?= $data['jumlah'] ?>">
-      </div> 
+         <input class="form-control" type="text" id="jumlah" name="jumlah" value="<?= $data['jumlah'] ?>">
    </div>
 
    <div class="form-group">
       <label for="nama">Bagasi</label>   
-      <div class="input">
-         <input type="text" id="bagasi" name="bagasi" value="<?= $data['bagasi'] ?>">
-      </div> 
+         <input class="form-control" type="text" id="bagasi" name="bagasi" value="<?= $data['bagasi'] ?>">
    </div>
 
    <div class="form-group">
