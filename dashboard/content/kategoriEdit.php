@@ -32,6 +32,6 @@
 
    <div class="form-group">
       <input type="submit" value="Simpan" class="btn btn-primary">
-      <input type="reset" value="Batal" class="tombol reset">
+      <input type="reset" value="Batal" class="btn btn-outline-primary m-3" onclick="history.back();">
    </div>
 </form>

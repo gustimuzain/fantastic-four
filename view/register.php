@@ -1,3 +1,9 @@
+<?php
+    if(isset($_SESSION['isLogin'])) {
+        header("location: ./index.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,19 +23,19 @@
                         <center><h5>Daftar Sekarang</h5></center>
                         <div class="form-group">
                             <label>Nama</label>
-                            <input type="text" class="form-control" name="username" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" name="email" required="required">
+                            <input type="text" class="form-control" name="nama" id="nama" required="required">
                         </div>
                         <div class="form-group">
                             <label>Nomor Ponsel</label>
-                            <input type="tel" class="form-control" name="username" required="required">
+                            <input type="tel" class="form-control" name="nohp" id="nohp" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="email" id="email" required="required">
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control" name="myInput" id="password" required="required">
+                            <input type="password" class="form-control" name="passord" id="password" required="required">
                         </div>
                         <div class="form-group">
                             <label>Confirm Password</label>
@@ -37,12 +43,17 @@
                             <span id='message'></span>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Daftar</button>
+                            <button type="submit" name="daftar" class="btn btn-primary btn-block btn-lg">Daftar</button>
                         </div>
                     </form>
+
+                    
+
                 </div>
                 <div class="text-center">Sudah punya akun? <a href=""><strong>Masuk</strong></a></div>
             </div>
         </div>
+        
+        <script src="../js/pass.js"></script>
     </body>
 </html>

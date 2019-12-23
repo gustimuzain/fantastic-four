@@ -34,7 +34,8 @@
          <td><?= $data['tipe'] ?></td>
          <td>
             <a class="btn btn-success" href="?hal=mobilEdit&id=<?= $data['mobil_id'] ?>"> Edit </a>
-            <a class="btn btn-danger" href="?hal=mobilHapus&id=<?= $data['mobil_id'] ?>&foto=<?= $data['foto'] ?>"> Hapus </a>
+            <a class="btn btn-danger" onclick="javascript: return confirm('Anda yakin hapus <?php echo $data['nama']?>?')" 
+             href="?hal=mobilHapus&id=<?= $data['mobil_id'] ?>&foto=<?= $data['foto'] ?>"> Hapus </a>
          </td>
      </tr>
 <?php

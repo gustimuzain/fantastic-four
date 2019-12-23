@@ -15,8 +15,8 @@
                 </li>
             </ul>
             <div class="navbar-nav ml-auto">
-                <a href="daftar.html" class="nav-item nav-link">Login</a>
-                <a href="masuk.html" class="nav-item nav-link">Daftar</a>
+                <a href="../view/login.php" class="nav-item nav-link">Login</a>
+                <a href="../view/register.php" class="nav-item nav-link">Daftar</a>
             </div>
         </nav>
     </header>
