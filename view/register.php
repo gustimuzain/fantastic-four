@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row card shadow p-3 mb-5 register">
                 <div class="">
-                    <form>
+                    <form name="register" action ="../controller/userCreate.php" method="post">
                         <center><h5>Daftar Sekarang</h5></center>
                         <div class="form-group">
                             <label>Nama</label>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="form-group">
                             <label>Nomor Ponsel</label>
-                            <input type="tel" class="form-control" name="nohp" id="nohp" required="required">
+                            <input type="tel" class="form-control" name="no_hp" id="no_hp" required="required">
                         </div>
                         <div class="form-group">
                             <label>Email</label>
@@ -46,9 +46,6 @@
                             <button type="submit" name="daftar" class="btn btn-primary btn-block btn-lg">Daftar</button>
                         </div>
                     </form>
-
-                    
-
                 </div>
                 <div class="text-center">Sudah punya akun? <a href=""><strong>Masuk</strong></a></div>
             </div>

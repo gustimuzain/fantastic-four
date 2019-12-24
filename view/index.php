@@ -1,5 +1,8 @@
 <?php
     include "../config.php";
+    if(!isset($_SESSION['isLogin'])) {
+        header("location: ../view/login.php");
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -78,7 +81,7 @@
                                     </div>
                                 </div>
                             </div>
-							<a href="#" class="btn btn-primary mt-4">Pilih</a>
+							<a href="?hal=car-detail&id=<?= $data['mobil_id'] ?>" class="btn btn-primary mt-4">Pilih</a>
 						</div>
                     </div>
                 </div>

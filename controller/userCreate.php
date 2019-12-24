@@ -1,13 +1,13 @@
 <?php
     include('../config.php');
     $nama = $_POST['nama'];
-    $nohp = $_POST['no_hp'];
+    $no_hp = $_POST['no_hp'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $activationcode = md5($email.time());
     
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $input = mysqli_query($con,"INSERT INTO user(nama,no_hp,email,password,activationcode,status) VALUES('$nama','$nohp','$email','$password','$activationcode','UNREGISTERED')") or die(mysqli_error($con));
+    $input = mysqli_query($con,"INSERT INTO user(nama,no_hp,email,password,activationcode,status) VALUES('$nama','$no_hp','$email','$password','$activationcode','UNREGISTERED')") or die(mysqli_error($con));
     if($input) {
         $to=$email;
         $msg= "Terimaskasih sudah mendaftar";
@@ -25,6 +25,6 @@
         echo '<script>window.location= "../view/login.php";</script>';
     }
     else {
-        echo '<script>alert("Gagal melakukan pendaftaran"); window.location= "../Register.php";</script>';
+        echo '<script>alert("Gagal melakukan pendaftaran"); window.location= "../view/register.php";</script>';
     }     
 ?>
