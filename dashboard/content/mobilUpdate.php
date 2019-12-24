@@ -44,10 +44,10 @@
       echo $error;
       echo "<meta http-equiv='refresh' content='2; url=?hal=mobilEdit&id=$_POST[id]'>";
    }elseif($query){
-      echo "Data berhasil disimpan!";
+      echo '<div class="alert alert-success" role="alert">Data berhasil disimpan</div>';
       echo "<meta http-equiv='refresh' content='1; url=?hal=mobil'>";
    }else{
-      echo "Tidak dapat menyimpan data!<br>";
+      echo '<div class="alert alert-danger" role="alert">Tidak dapat menyimpan data</div>';
       echo mysqli_error();
    }
 ?>

@@ -6,10 +6,10 @@
    WHERE kategori_id='$_POST[id]'");
 
    if($query){
-      echo "Data berhasil disimpan!";
+      echo '<div class="alert alert-success" role="alert">Data berhasil disimpan</div>';
       echo "<meta http-equiv='refresh' content='1; url=?hal=kategori'>";
    }else{
-      echo "Tidak dapat menyimpan data!<br>";
+      echo '<div class="alert alert-danger" role="alert">Tidak dapat menyimpan data</div>';
       echo mysqli_error();
    }
 ?>
