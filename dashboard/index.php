@@ -42,12 +42,12 @@
                     </li>
                     <li class="">
                         <?php
-                            $query = mysqli_query($con, "SELECT * FROM mobil WHERE ");
+                            
                         ?>
                         <div class="container">
                             <div class="row">
                                 <img src="../image/avatar/micu.png" alt="" class="profile">
-                                <p class="name"><? $data['username'] ?></p>
+                                <p class="name"><? $_SESSION['username'] ?></p>
                             </div>
                         </div>
                     </li>

@@ -1,3 +1,6 @@
+<?php
+    include "../config.php";
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -56,34 +59,32 @@
             </div>
             <br>
             <div class="row">
-
+            <?php
+                $query = mysqli_query($con, "SELECT * FROM mobil LEFT JOIN kategori_mobil ON mobil.kategori_id=kategori_mobil.kategori_id ORDER BY mobil.kategori_id DESC");
+                $no = 0;
+                while($data = mysqli_fetch_array($query)){
+                    $no++;
+            ?>
                 <div class="col-sm-12 col-md-4">
                     <div class="card shadow p-3 mb-5" id="cardmobil">
 						<div class="productinfo text-center">
-                        <?php
-                            $query = mysqli_query($con, "SELECT * FROM mobil LEFT JOIN kategori_mobil ON mobil.kategori_id=kategori_mobil.kategori_id ORDER BY mobil.kategori_id DESC");
-                            $no = 0;
-                            while($data = mysqli_fetch_array($query)){
-                                $no++;
-                        ?>
-							<img src="image/<?= $data['foto'] ?>" alt="" />
+							<img src="../dashboard/image/<?= $data['foto'] ?>" alt="" />
 							<div class="">
                                 <h5 class=""><?= $data['nama'] ?></h5>
                                 <div class="d-flex justify-content-center">
-                                    <span class="badge badge-pill badge-secondary align-self-center">Manual</span>
+                                    <span class="badge badge-pill badge-secondary align-self-center"><?= $data['transmisi'] ?></span>
                                     <div class="ml-2">
-                                        <span><i class="fas fa-user"></i>4</span>
+                                        <span><i class="fas fa-user"></i><?= $data['jumlah'] ?></span>
                                     </div>
                                 </div>
                             </div>
 							<a href="#" class="btn btn-primary mt-4">Pilih</a>
 						</div>
-                        <?php
-                            }
-                        ?>
                     </div>
                 </div>
-                
+                <?php
+                    }
+                ?>
             </div>
         </div>
 
