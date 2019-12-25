@@ -53,7 +53,8 @@
                                     data-name="Fantastic Four"
                                     data-description="Reantal"
                                     data-reference=""
-                                    data-amount="350000"
+                                    data-amount="<?= $data['harga'] ?>"
+                                    data-color="#2253F5"
                                     >Pilih</button>
                                 </div>
                             </div> 
@@ -62,9 +63,9 @@
                                 <div>
                                     <p>Info Mobil</p>
                                     <ul>
-                                        <li>Tahun 2018</li>
-                                        <li>Bagasi</li>
-                                        <li>Manual</li>
+                                        <li>Tahun <?= $data['tahun'] ?></li>
+                                        <li>Bagasi <?= $data['bagasi'] ?></li>
+                                        <li><?= $data['transmisi'] ?></li>
                                     </ul>
                                 </div>
                                 <div>
@@ -91,6 +92,9 @@
                         </div>
                     </div>
                 </div>
+                <?php
+                    }
+                ?>
             </div>
         </div>
         <div style="margin-top: 9rem">
