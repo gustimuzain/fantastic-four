@@ -14,7 +14,7 @@
             <div class="row">
             <?php
                 $query = mysqli_query($con, "SELECT * FROM mobil LEFT JOIN kategori_mobil ON mobil.kategori_id=kategori_mobil.kategori_id ORDER BY mobil.kategori_id DESC");
-                while($data = mysqli_fetch_array($query)){
+                $data = mysqli_fetch_array($query)
             ?>
                 <div class="col-sm-4">
                     <div class="card rounded cardshad cardrespo">
@@ -92,9 +92,6 @@
                         </div>
                     </div>
                 </div>
-                <?php
-                    }
-                ?>
             </div>
         </div>
         <div style="margin-top: 9rem">
