@@ -33,7 +33,7 @@
                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="harga">Rp<?= number_format($data['harga'],2,',','.');  ?>/hari</h5>
+                                    <h5 class="harga">Rp<?= number_format($data['harga'],0,',','.');  ?>/hari</h5>
                                 </div>                                
                             </div>
                         </div>                            

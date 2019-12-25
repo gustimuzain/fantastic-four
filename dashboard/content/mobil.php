@@ -29,7 +29,7 @@
          <td><?= $no ?></td>
          <td><img src="image/<?= $data['foto'] ?>" width="100"></td>
          <td><?= $data['nama'] ?></td>
-         <td>Rp<?= number_format($data['harga'],2,',','.');  ?></td>
+         <td>Rp<?= number_format($data['harga'],0,',','.');  ?></td>
          <td><?= $data['tahun'] ?></td>
          <td><?= $data['plat'] ?></td>
          <td><?= $data['tipe'] ?></td>
