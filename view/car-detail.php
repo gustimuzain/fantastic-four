@@ -11,24 +11,28 @@
 
         <div class="container">
             <div class="row">
+            <?php
+                $query = mysqli_query($con, "SELECT * FROM mobil LEFT JOIN kategori_mobil ON mobil.kategori_id=kategori_mobil.kategori_id ORDER BY mobil.kategori_id DESC");
+                while($data = mysqli_fetch_array($query)){
+            ?>
                 <div class="col-sm-4">
                     <div class="card rounded cardshad cardrespo">
                         <div>
                             <div class="productdetail">
-                                <img src="../image/mobil/brio.jpg" alt="">
+                                <img src="../dashboard/image/<?= $data['foto'] ?>" alt="">
                             </div>
                             <div class="d-flex flex-column align-items-center">
                                 <div class="">
-                                   <h5 class="">Honda Brio</h5>
+                                   <h5 class=""><?= $data['nama'] ?></h5>
                                    <div class="d-flex justify-content-center">
-                                        <span class="badge badge-pill badge-secondary align-self-center">Manual</span>
+                                        <span class="badge badge-pill badge-secondary align-self-center"><?= $data['transmisi'] ?></span>
                                         <div class="ml-2">
-                                            <span><i class="fas fa-user"></i>4</span>
+                                            <span><i class="fas fa-user"></i><?= $data['jumlah'] ?></span>
                                         </div>
                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="harga">Rp250.000/hari</h5>
+                                    <h5 class="harga">Rp<?= number_format($data['harga'],2,',','.');  ?>/hari</h5>
                                 </div>                                
                             </div>
                         </div>                            
