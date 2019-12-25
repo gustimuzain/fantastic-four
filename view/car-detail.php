@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <?php include '../layout/head.php' ?>
+        <script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
     </head>
 
     <body>
@@ -47,7 +48,13 @@
                                     <h5 class="harga">Rp250.000 / 1 hari</h5>
                                 </div>
                                 <div class="mr-4 mt-3 ml-auto">
-                                    <button type="button" class="btn btn-primary">Pilih</button>
+                                    <button type="button" class="btn btn-primary"
+                                    data-sc-key="sbpb_OGM1MzRlY2YtZGYxMS00NTllLWI5ODMtYThkZjQ3NGY1ZmI5"
+                                    data-name="Fantastic Four"
+                                    data-description="Reantal"
+                                    data-reference=""
+                                    data-amount="350000"
+                                    >Pilih</button>
                                 </div>
                             </div> 
                             <hr>
