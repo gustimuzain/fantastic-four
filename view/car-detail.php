@@ -51,7 +51,7 @@
                                     <button type="button" class="btn btn-primary"
                                     data-sc-key="sbpb_MjU1M2QzOTItZjk5My00MmU1LWI0NmItNzc1YzQ3ZmVkZWQy"
                                     data-name="Fantastic Four"
-                                    data-description="Reantal"
+                                    data-description="Rental"
                                     data-reference=""
                                     data-amount="<?= $data['harga'] ?>"
                                     data-color="#2253F5"

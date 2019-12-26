@@ -3,7 +3,7 @@
 ?>
 
 <h2 class="">Data Mobil</h2>
-<a class="btn btn-primary mb-3 mt-3" href="?hal=mobilTambah">Tambah</a>
+<a class="btn btn-primary mb-3 mt-3" href="?hal=mobilTambah"><span class="input-group-addon"><i class="fa fa-plus"></i></span> Tambah</a>
 
 <table class="table">
    <thead>
@@ -35,9 +35,9 @@
          <td><?= $data['tipe'] ?></td>
          <td><?= $data['transmisi'] ?></td>
          <td>
-            <a class="btn btn-success" href="?hal=mobilEdit&id=<?= $data['mobil_id'] ?>"> Edit </a>
+            <a class="btn btn-success" href="?hal=mobilEdit&id=<?= $data['mobil_id'] ?>"><span class="input-group-addon"><i class="fa fa-edit"></i></span> Edit </a>
             <a class="btn btn-danger" onclick="javascript: return confirm('Anda yakin hapus <?php echo $data['nama']?>?')" 
-             href="?hal=mobilHapus&id=<?= $data['mobil_id'] ?>&foto=<?= $data['foto'] ?>"> Hapus </a>
+             href="?hal=mobilHapus&id=<?= $data['mobil_id'] ?>&foto=<?= $data['foto'] ?>"><span class="input-group-addon"><i class="fa fa-trash"></i></span> Hapus </a>
          </td>
      </tr>
    <?php

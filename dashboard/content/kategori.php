@@ -3,7 +3,7 @@
 ?>
 
 <h2 class="">Data Kategori</h2>
-<a class="btn btn-primary mb-3 mt-3" href="?hal=kategoriTambah">Tambah</a>
+<a class="btn btn-primary mb-3 mt-3" href="?hal=kategoriTambah"><span class="input-group-addon"><i class="fa fa-plus"></i></span> Tambah</a>
 
 <table class="table">
    <thead>
@@ -27,8 +27,8 @@
          <td><?= $data['jumlah'] ?></td>
          <td><?= $data['bagasi'] ?></td>
          <td>
-            <a class="btn btn-success" href="?hal=kategoriEdit&id=<?= $data['kategori_id'] ?>"> Edit </a>
-            <a class="btn btn-danger" href="?hal=kategoriHapus&id=<?= $data['kategori_id'] ?>"> Hapus </a>
+            <a class="btn btn-success" href="?hal=kategoriEdit&id=<?= $data['kategori_id'] ?>"><span class="input-group-addon"><i class="fa fa-edit"></i></span> Edit </a>
+            <a class="btn btn-danger" href="?hal=kategoriHapus&id=<?= $data['kategori_id'] ?>"><span class="input-group-addon"><i class="fa fa-trash"></i></span> Hapus </a>
          </td>
      </tr>
 <?php

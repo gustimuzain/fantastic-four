@@ -13,6 +13,10 @@
     height: 2px;
     background: #2253F5;
 }
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
 .productinfo p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
