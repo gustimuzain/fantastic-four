@@ -30,7 +30,7 @@
                             <input type="password" class="form-control pass" name="password" id="password" required="required">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Masuk</button>
+                            <button name="login" type="submit" class="btn btn-primary btn-block btn-lg">Masuk</button>
                         </div>
                     </form>
                 </div>
