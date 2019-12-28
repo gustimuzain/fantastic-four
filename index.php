@@ -1,4 +1,4 @@
-<!-- <?php //include '../layout/header.php'; -->
+<?php
     if(!isset($_SESSION['isLogin'])) {
         header("location: ./view/login.php");
     }

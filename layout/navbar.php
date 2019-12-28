@@ -1,24 +1,17 @@
 <?php 
-    // session_start();
+    session_start();
     include('../config.php');
     if(isset($_SESSION["isLogin"])) {
         $user = $_SESSION["user"];
         $email =  $user["email"];
         $query = mysqli_query($con,"SELECT * FROM user WHERE email ='$email'") or die(mysqli_error($con));
-        $user = mysqli_fetch_assoc($query);
-        $no=1;
-        while($data = mysqli_fetch_assoc($query)){    
-            $no++;
-        }   
+        $user = mysqli_fetch_assoc($query);  
     } 
-    else {
-        $no=0;
-    }
 ?>
 
     <header>
         <nav class="navbar bg-white navbar-expand-md shadow p-3 mb-5 fixed-top">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="">
                 <img src="../image/logoF4.png" alt="logo" class="logo">
             </a>
             <ul class="navbar-nav navbar-center">
